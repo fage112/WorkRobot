@@ -91,8 +91,8 @@ if __name__=='__main__':
         if Cmd=='':
             continue
         elif Cmd=='upload':
-            Local_file_Path=input('input the local file path:')
-            Remote_Path=input('input the remote host file path:')
+            Local_file_Path=input('本地文件路径:')
+            Remote_Path=input('远端服务器文件存放路径:')
             start = time.clock()
             for i in ServerInfo:
                 t = threading.Thread(target=a.sftp, args=(ServerInfo[i],Local_file_Path,Remote_Path,'upload'))
@@ -104,8 +104,8 @@ if __name__=='__main__':
             end = time.clock()
             print("程序运行用时：%s" % (end - start))
         elif Cmd=='download':
-            Local_file_Path=input('input the local file path:')
-            Remote_Path=input('input the remote host file path:')
+            Local_file_Path=input('本地文件路径:')
+            Remote_Path=input('远端服务器文件存放路径:')
             start = time.clock()
             for i in ServerInfo:
                 t = threading.Thread(target=a.sftp, args=(ServerInfo[i],Local_file_Path,Remote_Path,'download'))
