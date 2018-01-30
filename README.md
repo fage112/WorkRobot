@@ -4,7 +4,9 @@
 
 使用方法
 程序使用前需要先配置配置文件WorkShow.conf,配置文件的格式为
-[服务器组]
+[服务器组1]
+hostname=host===port===user===password===UseKey
+[服务器组2]
 hostname=host===port===user===password===UseKey
 hostname:主机名
 host:	 ip地址
