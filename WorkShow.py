@@ -59,7 +59,6 @@ class ssh_client():
         else:
             CMD_exec_fail_server.append(host_info['host'])
             response = err_result.decode()
-            print(response)
             self.command_log[host_info['host']] = response
             print(self.concat_log(host_info['host'],response,'失败'))
         #self.session.clear()
