@@ -123,7 +123,7 @@ if __name__=='__main__':
                 if re.search("^ *[Ee][Xx][Ii][Tt] *$", Selection):
                     break
                 elif re.search("^ *[sS][Ee][Ll][Gg].*$", Selection):
-                    print(Selection)
+                    #print(Selection)
                     T_grounps=Selection.split(' ')
                     T_grounps=T_grounps[1].split(',')
                     read_config(T_grounps)
@@ -153,7 +153,7 @@ if __name__=='__main__':
                     print(str(SeverGroups)+'\n'+str(ServerInfo))
                     ServerInfo=Tmp_ServerInfo
                 elif re.search("^ *[sS][Hh][Oo][Ww] *[Ss][Ee][Ll].*$", Selection):
-                    print('show selected')
+                    #print('show selected')
                     print(ServerInfo)
                 elif re.search("^ *[sS][Hh][Oo][Ww] *[Ff][Aa][Ii][Ll][Ee][Dd].*$", Selection):
                     print('show failed')
